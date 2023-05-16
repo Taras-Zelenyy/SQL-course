@@ -1,8 +1,6 @@
 # SQL course
 These are my lab works, in which I studied the following SQL structures that I used in my labs: DDL, DML and TCL in Microsoft SQL Server.
 
-# SQL course
-
 ## Table of Contents
 
 1. [Laboratory #1](#Laboratory-1)
