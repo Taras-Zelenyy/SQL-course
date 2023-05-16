@@ -51,6 +51,7 @@ These are my lab works, in which I studied the following SQL structures that I u
 #### **Main of the Laboratory_1**
 
 ###### Create DataBase
+
 ```sql
 IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = '<base_name>')
 CREATE DATABASE <base_name>;
@@ -58,9 +59,11 @@ CREATE DATABASE <base_name>;
 USE <base_name>
 ```
 ###### Create Table
+
 - *IDENTITY(1,1) - used to define a column in a table as an identity column. An identity column is a column that automatically generates unique numeric values for each new row inserted into the table.*
 - *PRIMARY KEY - column or a set of columns in a database table that uniquely identifies each row in that table.*
 - *NOT NULL - constraint ensures that every row in the table must have a valid, non-null value in the primary key column(s).*
+
 ```sql
 CREATE TABLE <table_name>
 (
@@ -74,6 +77,9 @@ CREATE TABLE <table_name>
 ```
 
 ###### Insert Table
+
+- *INSERT - used to insert new rows of data into a table*
+
 ```sql
 INSERT INTO <table_name> (Variable_2, Variable_3, Variable_4, Variable_5)
 VALUES
@@ -85,6 +91,9 @@ VALUES
 ```
 
 ###### Create Foreign Key
+
+- *Foreign Key - constraint that establishes a relationship between two tables. It is used to maintain referential integrity, ensuring that the data in the related tables remains consistent. A foreign key column in one table refers to the primary key column in another table.*
+
 ```sql
 CREATE TABLE <table_name_1>
 (
@@ -100,13 +109,16 @@ CREATE TABLE <table_name_2>
 );
 ```
 
+- *DROP - used to remove database objects such as tables, views, indexes, or constraints. *
 ###### Drop Foreign Key
+
 ```sql
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[<fk_name>]') AND type = 'F')
 	ALTER TABLE BookCopy DROP CONSTRAINT <fk_name>;
 ```
 
 ###### Drop table
+
 ```sql
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[<table_name_1>]') AND type in (N'U'))
 	DROP TABLE [dbo].[<table_name_1>];
