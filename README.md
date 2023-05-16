@@ -40,15 +40,15 @@ These are my lab works, in which I studied the following SQL structures that I u
 
 # Laboratory #1
 
-### Description of the laboratory
+### Description of the Laboratory_1
 
-#### **Task of the laboratory**
+#### **Task of the Laboratory_1**
 
 *1. When performing laboratory work, the diagram should display three types of connections: 'one-to-one', 'one-to-many' and 'many-to-many'.*
 
 *2. Tables must contain primary (Primary Key) and secondary keys (Foregin key)*
 
-#### **Main of the laboratory**
+#### **Main of the Laboratory_1**
 
 ###### Create DataBase
 ```sql
@@ -112,38 +112,38 @@ IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[<table
 	DROP TABLE [dbo].[<table_name_1>];
 ```
 # Laboratory #2
-### Description of the laboratory
-#### **Task of the laboratory**
+### Description of the Laboratory_2
+#### **Task of the Laboratory_2**
 ######
-#### **Main of the laboratory**
+#### **Main of the Laboratory_2**
 ###### 
 # Laboratory #3
-### Description of the laboratory
-#### **Task of the laboratory**
+### Description of the Laboratory_3
+#### **Task of the Laboratory_3**
 ###### 
-#### **Main of the laboratory**
+#### **Main of the Laboratory_3**
 ###### 
 # Laboratory #4
-### Description of the laboratory
-#### **Task of the laboratory**
+### Description of the Laboratory_4
+#### **Task of the Laboratory_4**
 ###### 
-#### **Main of the laboratory**
+#### **Main of the Laboratory_4**
 ###### 
 # Laboratory #5
-### Description of the laboratory
-#### **Task of the laboratory**
+### Description of the Laboratory_5
+#### **Task of the Laboratory_5**
 ###### 
-#### **Main of the laboratory**
+#### **Main of the Laboratory_5**
 ###### 
 # Laboratory #6
-### Description of the laboratory
-#### **Task of the laboratory**
+### Description of the Laboratory_6
+#### **Task of the Laboratory_6**
 ###### 
-#### **Main of the laboratory**
+#### **Main of the Laboratory_6**
 ###### 
 # Laboratory #7
-### Description of the laboratory
-#### **Task of the laboratory**
+### Description of the Laboratory_7
+#### **Task of the Laboratory_7**
 ###### 
-#### **Main of the laboratory**
+#### **Main of the Laboratory_7**
 ######
