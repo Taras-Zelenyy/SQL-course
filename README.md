@@ -1,9 +1,31 @@
 # SQL course
 These are my lab works, in which I studied the following SQL structures that I used in my labs: DDL, DML and TCL in Microsoft SQL Server.
 
+*SQL (Structured query language — мова структурованих запитів), складається з:*
+- *DDL (Data Definition Language) — робота зі структурою бази,*
+- *DML (Data Manipulation Language) — робота з рядочками,*
+- *DCL (Data Control Language) — робота з правами,*
+- *TCL (Transaction Control Language) — робота з транзакціями.*
+
+*Data Definition Language*
+- *CREATE — створення об'єкта (наприклад, таблиці);*
+- *ALTER — зміна об'єкта (наприклад, додавання/зміна полів таблиці);*
+- *DROP — видалення об'єкта.*
+
+*Data Manipulation Language*
+- *INSERT — вставлення рядочка;*
+- *SELECT — вибірка;*
+- *UPDATE — зміна;*
+- *DELETE — видалення.*
+
+*Transaction Control Language*
+- *BEGIN TRANSACTION — почати транзакцію;*
+- *COMMIT — прийняти зміни прийняті в транзакції;*
+- *ROLLBACK — відкат.*
+
 ## Table of Contents
 
-1. [Laboratory_1](#Laboratory_1)
+1. [Laboratory #1](#Laboratory #1)
    - [Description of the Laboratory_1](#Description-of-the-Laboratory_1)
    - [Task of the Laboratory_1](#Task-of-the-Laboratory_1)
    - [Main of the Laboratory_1](#Main-of-the-Laboratory_1)
@@ -13,27 +35,27 @@ These are my lab works, in which I studied the following SQL structures that I u
      - [Create Foreign Key](#Create-Foreign-Key)
      - [Drop Foreign Key](#Drop-Foreign-Key)
      - [Drop Table](#Drop-Table)
-2. [Laboratory_2](#Laboratory_2)
+2. [Laboratory #2](#Laboratory #2)
    - [Description of the Laboratory_2](#Description-of-the-Laboratory_2)
    - [Task of the Laboratory_2](#Task-of-the-Laboratory_2)
    - [Main of the Laboratory_2](#Main-of-the-Laboratory_2)
-3. [Laboratory_3](#Laboratory_3)
+3. [Laboratory #3](#Laboratory #3)
    - [Description of the Laboratory_3](#Description-of-the-Laboratory_3)
    - [Task of the Laboratory_3](#Task-of-the-Laboratory_3)
    - [Main of the Laboratory_3](#Main-of-the-Laboratory_3)
-4. [Laboratory_4](#Laboratory_4)
+4. [Laboratory #4](#Laboratory #4)
    - [Description of the Laboratory_4](#Description-of-the-Laboratory_4)
    - [Task of the Laboratory_4](#Task-of-the-Laboratory_4)
    - [Main of the Laboratory_4](#Main-of-the-Laboratory_4)
-5. [Laboratory_5](#Laboratory_5)
+5. [Laboratory #5](#Laboratory #5)
    - [Description of the Laboratory_5](#Description-of-the-Laboratory_5)
    - [Task of the Laboratory_5](#Task-of-the-Laboratory_5)
    - [Main of the Laboratory_5](#Main-of-the-Laboratory_5)
-6. [Laboratory_6](#Laboratory_6)
+6. [Laboratory #6](#Laboratory #6)
    - [Description of the Laboratory_6](#Description-of-the-Laboratory_6)
    - [Task of the Laboratory_6](#Task-of-the-Laboratory_6)
    - [Main of the Laboratory_6](#Main-of-the-Laboratory_6)
-7. [Laboratory_7](#Laboratory_7)
+7. [Laboratory #7](#Laboratory #7)
    - [Description of the Laboratory_7](#Description-of-the-Laboratory_7)
    - [Task of the Laboratory_7](#Task-of-the-Laboratory_7)
    - [Main of the Laboratory_7](#Main-of-the-Laboratory_7)
@@ -109,8 +131,9 @@ CREATE TABLE <table_name_2>
 );
 ```
 
-- *DROP - used to remove database objects such as tables, views, indexes, or constraints. *
 ###### Drop Foreign Key
+
+- *DROP - used to remove database objects such as tables, views, indexes, or constraints. *
 
 ```sql
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[<fk_name>]') AND type = 'F')
